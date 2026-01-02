@@ -42,14 +42,14 @@ GitHub automatically scans for secrets. If detected:
 
 ## What Was Exposed
 
-- Gmail App Password: `liyt kxyv jwsy nwqg` (in commit cfee352)
-- **Action Required**: Revoke this App Password immediately!
+- Gmail App Password was exposed in commit cfee352 (now removed from history)
+- **Action Required**: Revoke the exposed App Password immediately!
 
 ## Immediate Action Required
 
 1. **Revoke the exposed Gmail App Password:**
    - Go to: https://myaccount.google.com/apppasswords
-   - Find and delete the password: `liyt kxyv jwsy nwqg`
+   - Review all App Passwords and revoke any that were committed to git
    - Generate a new App Password if needed
 
 2. **Request GitHub to remove the commit** (Option 1 above)
