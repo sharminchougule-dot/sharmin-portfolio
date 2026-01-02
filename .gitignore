@@ -46,3 +46,12 @@ email_config_example.txt
 # Email configuration (if you create a local config file)
 email_config.py
 
+# Flask app files (not needed for static GitHub Pages)
+app.py
+Procfile
+render.yaml
+requirements.txt
+templates/
+__pycache__/
+*.pyc
+
