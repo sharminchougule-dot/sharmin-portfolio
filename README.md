@@ -1,69 +1,91 @@
-# Sharmin Chougule - Portfolio Website
+# Sharmin N. Chougule — Portfolio Website
 
-A modern, responsive portfolio website showcasing research, publications, and professional experience.
+Personal portfolio for Sharmin N. Chougule, Research Associate at the Institut für das Recht der Digitalisierung (IRDi), University of Marburg, and Doctor Europaeus in Civil Law & Constitutional Legality.
 
-## 🌐 Live Site
+## Live Site
 
-Visit the live portfolio: [https://sharminchougule-dot.github.io/sharmin-portfolio/](https://sharminchougule-dot.github.io/sharmin-portfolio/)
+[https://sharminchougule-dot.github.io/sharmin-portfolio/](https://sharminchougule-dot.github.io/sharmin-portfolio/)
 
-## 📋 Features
+---
 
-- **Responsive Design**: Works beautifully on desktop, tablet, and mobile devices
-- **Modern UI**: Clean and professional design with teal color scheme
-- **Sections**: 
-  - Hero/Home section with profile picture
-  - About section with professional background
-  - Skills showcase
-  - Publications & Research
-  - Experience & Education timeline
-  - Contact form with EmailJS integration
+## Design
 
-## 🚀 Technologies Used
+**Editorial Scholar** — ink navy · warm ivory · oxblood · brushed gold.
 
-- HTML5
-- CSS3 (with CSS Variables)
-- JavaScript (Vanilla JS)
-- EmailJS (for contact form)
+Typography: [Fraunces](https://fonts.google.com/specimen/Fraunces) (display serif) · [Inter](https://fonts.google.com/specimen/Inter) (body) · [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) (labels & tags), loaded via Google Fonts.
 
-## 📁 Project Structure
+---
+
+## Sections
+
+| Section | Description |
+|---|---|
+| **Hero** | Editorial split-layout with portrait frame, institution wordmark strip (Marburg · Camerino · UNIDROIT · KU Leuven · INATBA · ICLE), and three CTAs |
+| **Stat Strip** | Five key credentials at a glance: years in law, publications, research countries, Doctor Europaeus, EU Blue Card |
+| **About** | Two-column layout with pull quote, research focus pillars, and info cards |
+| **Expertise** | Three-column areas of expertise: Legal, Technology Law, and Additional Skills |
+| **Publications** | Featured publication (DG JUST / European Commission) + five-card grid |
+| **Affiliations** | Dedicated section for INATBA AAB, UNIDROIT Task Force, ICLE Fellowship, ICSI |
+| **Experience** | Tabbed timeline — Research & Academia · Legal Practice · Education |
+| **Contact** | Three institutional emails, social links, and EmailJS-powered contact form |
+
+---
+
+## Technologies
+
+- HTML5 / CSS3 (CSS custom properties)
+- Vanilla JavaScript
+- [EmailJS](https://www.emailjs.com/) — contact form delivery
+- Google Fonts — Fraunces, Inter, JetBrains Mono
+
+---
+
+## Project Structure
 
 ```
 sharmin-portfolio/
-├── index.html              # Main HTML file
+├── index.html              # Main page
 ├── static/
 │   ├── css/
-│   │   └── style.css       # Stylesheet
-│   └── images/             # Images (profile, publications)
-├── GITHUB_PAGES_SETUP.md   # Setup instructions
+│   │   └── style.css       # Full design system stylesheet
+│   └── images/             # Profile photo and publication images
+├── GITHUB_PAGES_SETUP.md   # GitHub Pages deployment guide
+├── IMAGE_SOURCES_GUIDE.md  # Guide for publication cover images
 └── README.md               # This file
 ```
 
-## 🛠️ Setup Instructions
+---
 
-1. Clone the repository
-2. Open `index.html` in a browser
-3. For contact form functionality, set up EmailJS (see `GITHUB_PAGES_SETUP.md`)
+## Local Setup
 
-## 📧 Contact Form Setup
+```bash
+git clone https://github.com/sharminchougule-dot/sharmin-portfolio.git
+cd sharmin-portfolio
+# Open index.html in a browser — no build step required
+```
 
-The contact form uses EmailJS for email delivery. To set it up:
+---
 
-1. Sign up at [EmailJS](https://www.emailjs.com/)
+## Contact Form (EmailJS)
+
+The form uses EmailJS. Credentials are already configured in `index.html`. To update them:
+
+1. Sign up at [emailjs.com](https://www.emailjs.com/)
 2. Create an email service and template
-3. Update `index.html` with your EmailJS credentials:
-   - Public Key (line 12)
-   - Service ID (line 727)
-   - Template ID (line 727)
+3. In `index.html`, update:
+   - **Public Key** — `emailjs.init("…")` near line 12
+   - **Service ID** and **Template ID** — `emailjs.send(…)` in the form submit handler
 
-See `GITHUB_PAGES_SETUP.md` for detailed instructions.
+See `GITHUB_PAGES_SETUP.md` for full deployment instructions.
 
-## 📝 License
+---
 
-© 2025 Sharmin Chougule. All rights reserved.
-
-## 🔗 Links
+## Links
 
 - **LinkedIn**: [sharmin-chougule-7723a5109](https://www.linkedin.com/in/sharmin-chougule-7723a5109/)
 - **ORCID**: [0000-0002-1732-8235](https://orcid.org/0000-0002-1732-8235)
-- **White Bison**: [Profile](https://www.whitebison.io/author/sharmin-n-chougule)
+- **White Bison**: [Author profile](https://www.whitebison.io/author/sharmin-n-chougule)
 
+---
+
+© 2025 Sharmin N. Chougule. All rights reserved.
